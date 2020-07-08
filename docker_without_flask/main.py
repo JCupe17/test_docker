@@ -24,5 +24,4 @@ if __name__ == '__main__':
         queryResult = sparseArray.matching_strings(query)
         queryDict = {k: v for k, v in zip(query, queryResult)}
 
-        print("Query Size: {}".format(sparseArray.querySize))
         print("{}".format(queryDict))
