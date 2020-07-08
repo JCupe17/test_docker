@@ -1,0 +1,20 @@
+summary: "Compute Sparse Array"
+description: "This is a simple API which returns the number of matches in a INPUT_PATH file"
+consumes:
+- "application/json"
+produces:
+- "application/json"
+parameters:
+- in: "body"
+  name: "body"
+  description: "Accepts an input dictionary of queries"
+  required: true
+  schema:
+    type: "object"
+    properties:
+      query:
+        type: "string"
+        example : "na,ab,de"
+responses:
+  405:
+    description: "Invalid input"
